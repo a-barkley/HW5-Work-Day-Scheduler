@@ -28,12 +28,84 @@ displayDay.text(date)
 
 function compareHour() {
     if (currentHour > hourNine) {
-        $("#hour-nine").addClass("past")
+        $(".hour-nine").addClass("past")
         console.log("hi")
     } else if (currentHour == hourNine) {
-        $("#hour-nine").addClass("present")
+        $(".hour-nine").addClass("present")
     } else {
-        $("#hour-nine").addClass("future")
+        $(".hour-nine").addClass("future")
+    }
+
+    if (currentHour > hourTen) {
+        $(".hour-ten").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourTen) {
+        $(".hour-ten").addClass("present")
+    } else {
+        $(".hour-ten").addClass("future")
+    }
+
+    if (currentHour > hourEleven) {
+        $(".hour-eleven").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourEleven) {
+        $(".hour-eleven").addClass("present")
+    } else {
+        $(".hour-eleven").addClass("future")
+    }
+
+    if (currentHour > hourTwelve) {
+        $(".hour-twelve").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourTwelve) {
+        $(".hour-twelve").addClass("present")
+    } else {
+        $(".hour-twelve").addClass("future")
+    }
+
+    if (currentHour > hourOne) {
+        $(".hour-one").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourOne) {
+        $(".hour-one").addClass("present")
+    } else {
+        $(".hour-one").addClass("future")
+    }
+
+    if (currentHour > hourTwo) {
+        $(".hour-two").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourTwo) {
+        $(".hour-two").addClass("present")
+    } else {
+        $(".hour-two").addClass("future")
+    }
+
+    if (currentHour > hourThree) {
+        $(".hour-three").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourThree) {
+        $(".hour-three").addClass("present")
+    } else {
+        $(".hour-three").addClass("future")
+    }
+
+    if (currentHour > hourFour) {
+        $(".hour-four").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourFour) {
+        $(".hour-four").addClass("present")
+    } else {
+        $(".hour-four").addClass("future")
+    }
+
+    if (currentHour > hourFive) {
+        $(".hour-five").addClass("past")
+        console.log("hi")
+    } else if (currentHour == hourFive) {
+        $(".hour-five").addClass("present")
+    } else {
+        $(".hour-five").addClass("future")
     }
 }
 
