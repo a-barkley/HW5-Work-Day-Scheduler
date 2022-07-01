@@ -20,6 +20,7 @@ hourOne = 13
 hourTwo = 14
 hourThree = 15
 hourFour = 16
+hourFive = 17
 
 var date = moment().format("[Today is: ] dddd, MMMM Do");
 displayDay.text(date)
