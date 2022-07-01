@@ -100,14 +100,50 @@ function compareHour() {
     }
 }
 
-function setLocal() {
-    localStorage.setItem("9AM", hourNine.val);
-}
+var userInput9 = $(".hour-nine");
+var userInput10 = $(".hour-ten");
+var userInput11 = $(".hour-eleven");
+var userInput12 = $(".hour-twelve");
+var userInput1 = $(".hour-one");
+var userInput2 = $(".hour-two");
+var userInput3 = $(".hour-three");
+var userInput4 = $(".hour-four");
+var userInput5 = $(".hour-five");
 
-function getLocal() {
-    $(".hour-nine").text = localStorage.getItem("9AM")
-}
+$(".btn9").click(function() {
+    localStorage.setItem("9AM", userInput9.val())
+});
+
+$(".btn10").click(function() {
+    localStorage.setItem("10AM", userInput10.val())
+});
+
+$(".btn11").click(function() {
+    localStorage.setItem("11AM", userInput11.val())
+});
+
+$(".btn12").click(function() {
+    localStorage.setItem("12AM", userInput12.val())
+});
+
+$(".btn1").click(function() {
+    localStorage.setItem("1AM", userInput1.val())
+});
+
+$(".btn2").click(function() {
+    localStorage.setItem("2AM", userInput2.val())
+});
+
+$(".btn3").click(function() {
+    localStorage.setItem("3AM", userInput3.val())
+});
+
+$(".btn4").click(function() {
+    localStorage.setItem("4AM", userInput4.val())
+});
+
+$(".btn5").click(function() {
+    localStorage.setItem("5AM", userInput5.val())
+});
 
 compareHour()
-setLocal()
-getLocal()
