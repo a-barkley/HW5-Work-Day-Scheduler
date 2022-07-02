@@ -16,7 +16,7 @@ This is a work day scheduler. The current day is displayed at the top of the pag
 
 ## Webpage Gif
 
-![Webpage Functionality]()
+![Webpage Functionality](./assets/images/workdayscheduler.gif)
 
 ## Credits
 
