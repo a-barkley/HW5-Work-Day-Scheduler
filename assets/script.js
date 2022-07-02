@@ -123,27 +123,39 @@ $(".btn11").click(function() {
 });
 
 $(".btn12").click(function() {
-    localStorage.setItem("12AM", userInput12.val())
+    localStorage.setItem("12PM", userInput12.val())
 });
 
 $(".btn1").click(function() {
-    localStorage.setItem("1AM", userInput1.val())
+    localStorage.setItem("1PM", userInput1.val())
 });
 
 $(".btn2").click(function() {
-    localStorage.setItem("2AM", userInput2.val())
+    localStorage.setItem("2PM", userInput2.val())
 });
 
 $(".btn3").click(function() {
-    localStorage.setItem("3AM", userInput3.val())
+    localStorage.setItem("3PM", userInput3.val())
 });
 
 $(".btn4").click(function() {
-    localStorage.setItem("4AM", userInput4.val())
+    localStorage.setItem("4PM", userInput4.val())
 });
 
 $(".btn5").click(function() {
-    localStorage.setItem("5AM", userInput5.val())
+    localStorage.setItem("5PM", userInput5.val())
 });
 
+function getLocal() {
+    var listOfKeys = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
+    var listOfTimeKeys = [".hour-nine", ".hour-ten", ".hour-eleven", ".hour-twelve", ".hour-one", ".hour-two", ".hour-three", ".hour-four", ".hour-five"];
+
+    for (var i = 0; i < listOfKeys.length; i++){
+            $(listOfTimeKeys[i]).html(localStorage.getItem(listOfKeys[i]));
+    }
+}
+
+
+
+getLocal()
 compareHour()
